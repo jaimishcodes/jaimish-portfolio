@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb43546753.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="containar">
+            <nav>
+                <img src="logo3.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Jaimish</span><br>Kachariya From India</br></h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------About--------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="random.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>Aspiring Web Developer with hands-on experience in building responsive and <br> user-friendly web
+                        applications. Proficient in HTML, CSS, JavaScript, and modern frameworks,<br> with strong skills
+                        in front-end development and basic back-end integration. <br> Experienced in developing
+                        real-world projects such as portfolio websites, clones,<br> and interactive applications.
+                        <br>
+                    <div class="tab-titles">
+                        <p class="tab-limks active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-limks" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-limks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend </span><br><ol><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive Design</li></ol></li>
+                            <li><span>UI/UX </span><br>Design Web Application</li>
+                            <li><span>Databace</span> <br>Work With Database</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+
+                            <li>
+                                <span>Frontend</span><br>
+                                HTML5 <br>
+                                CSS3 <br>
+                                JavaScript <br>
+                                Responsive Design
+                            </li>
+
+                            <li>
+                                <span>Frameworks & Libraries</span><br>
+                                React (Basic)<br><br>
+
+                                <span>Backend</span><br>
+                                Node.js (Learning)
+                            </li>
+
+                            <li>
+                                <span>Database</span><br>
+                                DBMS <br>
+                                MongoDB (Learning)
+                                <br><br>
+                                <span>Tools</span><br>
+                                Git & GitHub <br>
+                                VS Code
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                            <li>Web Developer focused on learning Full Stack Development.</li>
+                            <li>Built responsive web projects using HTML, CSS, JavaScript, and React.</li>
+                            <li>Currently learning Node.js and MongoDB.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2024-2027 </span><br>bachelor of computer applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------Tech Stack--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Tech Stack</h1>
+
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating responsive and modern websites using HTML, CSS, and JavaScript with clean design and
+                        user-friendly interfaces.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Building interactive frontend projects with responsive layouts, modern UI design, and basic React
+                        development skills.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Full Stack Learning</h2>
+                    <p>Currently learning Node.js and MongoDB while exploring backend development to build dynamic full
+                        stack web applications.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Portfolio----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="amazon.png" alt="">
+                    <div class="layer">
+                        <h3>Amazon Clone</h3>
+                        <p>Created an Amazon homepage clone using HTML and CSS, focusing on layout design, navigation
+                            bar, product sections, and overall UI structure.</p>
+                        <a href="https://jaimishcodes.github.io/Amazon-Clone/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="convetor.png" alt="">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>Built a currency converter application using JavaScript with real-time calculation logic and
+                            dynamic currency conversion functionality.</p>
+                        <a href="https://jaimishcodes.github.io/Currency-Converter/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="SearchImages.png" alt="">
+                    <div class="layer">
+                        <h3>Image Search Engine</h3>
+                        <p>Developed a responsive image search engine using API integration, HTML, CSS, and JavaScript
+                            to fetch and display dynamic images based on user search queries.</p>
+                        <a href="https://jaimishcodes.github.io/Search-Engine/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="VoiceConverter.png" alt="">
+                    <div class="layer">
+                        <h3>Text to Voice Converter</h3>
+                        <p>Developed a Text to Voice Converter using JavaScript that converts written text into speech with interactive and user-friendly functionality.</p>
+                        <a href="https://jaimishcodes.github.io/Text-To-Voice-Converter-/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------Contact---------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> jaimmish2007@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9016994480</p>
+                    <div class="social-icon">
+                        <a
+                            href="https://www.linkedin.com/in/jaimish-kachariya-18600232a?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/jaimishcodes"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/jaimishkachariya"><i class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+                    </div>
+                    <a href="jaimish_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" id="submit-btn" class="btn btn2">
+                            Submit
+                        </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p> 2026 © Jaimish Kachariya. All rights reserved.</p>
+    </div>
+
+
+</body>
+
+
+<script src="script.js"></script>
+
+</html>
